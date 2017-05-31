@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+    "category":"Action games",
+    "list":[
+      {
+        "game":"Sinjid",
+        "url":"/sinjid",
+        "header_key":"sinjid"
+      },
+      {
+        "game":"Street Fighter",
+        "url":"/street_fighter",
+        "header_key":"street_fighter"
+      },
+      {
+        "game":"Injustice 2",
+        "url":"/injustice2",
+        "header_key":"injustice2"
+      }
+    ]
+  },
+    {
+      "category":"Adventure games",
+      "list":[
+      {
+        "game":"Witcher 3",
+        "url":"/witcher3",
+        "header_key":"witcher3"
+      },
+      {
+        "game":"Middle Earth: Shadow of Mordor",
+        "url":"/middle_earth_shadow_of_mordor",
+        "header_key":"middle_earth_shadow_of_mordor"
+      },
+      {
+        "game":"Watch Dogs",
+        "url":"http://localhost:3000/watch_dogs",
+        "header_key":"watch_dogs"
+      }
+    ]
+  }
+  ]
+}

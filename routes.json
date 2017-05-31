@@ -1,0 +1,27 @@
+{
+  "middleware": [
+    "middleware/Bootstrap.js"
+  ],
+  "routes": {
+    "LandingPage": {
+      "path": "/",
+      "page": "pages/landing-page.js"
+    },
+    "AboutPage":{
+      "path":"/about",
+      "page":"pages/about-page.js"
+    },
+    "WatchDogsPage":{
+      "path":"/watch_dogs",
+      "page":"pages/blog-page.js"
+    },
+    "MESOMPage":{
+      "path":"/middle_earth_shadow_of_mordor",
+      "page":"pages/blog-page.js"
+    },
+    "NotFoundPage": {
+			"path": "/(.*)",
+			"page": "pages/not-found.js"
+		}
+  }
+}

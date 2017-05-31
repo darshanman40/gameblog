@@ -1,0 +1,41 @@
+{
+  "name": "gameblog-git",
+  "version": "0.0.1",
+  "description": "A react-server instance",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "start": "react-server start",
+    "lint": "eslint test.js pages",
+    "test": "npm run lint && nsp check && ava test.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-preset-react-server": "^0.6.0",
+    "babel-runtime": "^6.6.1",
+    "react": "^15.4.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.4.1",
+    "react-infinite-scroller": "^1.0.12",
+    "react-router": "^4.1.1",
+    "react-server": "^0.6.4",
+    "react-server-cli": "^0.6.4",
+    "react-viewport": "^1.0.6",
+    "styled-components": "^1.0.0",
+    "superagent": "1.8.4"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-eslint": "^7.1.0",
+    "babel-plugin-transform-react-jsx": ">= 6.3",
+    "babel-preset-es2015": ">= 6.3",
+    "babel-preset-react": ">= 6.3",
+    "babelify": "^7.3.0",
+    "eslint": "^3.11.1",
+    "eslint-plugin-react": "6.7.1",
+    "grunt": "^1.0.1",
+    "grunt-babel": ">= 6.0.0",
+    "grunt-react": "^0.12.3",
+    "nsp": "^2.3.3",
+    "reactify": "^1.1.1"
+  }
+}

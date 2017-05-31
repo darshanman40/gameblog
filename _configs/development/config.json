@@ -1,0 +1,4 @@
+{
+  "APP_ENV": "development",
+  "MY_GLOBAL_VARIABLE": "foo"
+}
