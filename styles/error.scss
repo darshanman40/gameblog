@@ -1,43 +1,4 @@
-// #Header {
-//   position: relative;
-// }
-// #Header H1 {
-//   font-size: 3em;
-//   color: #00FF00;
-//   margin:0;
-//   padding:0;
-// }
-// #Header H2 {
-//   font-size: 1.5em;
-//   color: #FFFF00;
-//   margin:0;
-//   padding:0;
-// }
-// #Header .Background {
-//   // background: #557700;
-//   // filter: alpha(opacity=30);
-//   // filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
-//   background: url('http://localhost:3001/images/404notfound.png') no-repeat center center;
-//   -moz-opacity: 0.30;
-//   opacity: 0.3;
-//   zoom: 1;
-// }
-// #Header .Background * {
-//   visibility: hidden; // hide the faded text
-// }
-// #Header .Foreground {
-//   position: absolute; // position on top of the background div
-//   left: 0;
-//   top: 0;
-// }
 
-
-// /*
-//  * Start Bootstrap - Landing Page (http://startbootstrap.com/)
-//  * Copyright 2013-2016 Start Bootstrap
-//  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
-//  */
-//
 body,
 html {
     width: 100%;
@@ -163,7 +124,6 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    // background: url('http://localhost:3001/images/404notfound.png') no-repeat center center;
     background-size: cover;
 }
 

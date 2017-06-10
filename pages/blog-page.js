@@ -10,9 +10,9 @@ import categoriesList from '../data/categories.json';
 import Paragraphs from '../components/paragraphs';
 import Title from '../components/title';
 import SearchBox from '../components/search-box';
-import CommentBox from '../components/comment-box';
-import CommentButton from '../components/comment-button';
-import CommentContainer from '../components/comment-container'
+import CommentBox from '../components/comment-components/comment-box';
+import CommentContainer from '../components/comment-components/comment-container'
+import Comments from '../components/comment-components/comments'
 import CategoriesBox from '../components/categories-box';
 import CategoriesList from  '../components/categories-list';
 
@@ -23,6 +23,11 @@ export default class BlogPage {
 
 	handleRoute(next) {
 	        var params = this.getRequest().getUrl().toString().replace(/\//g, "");
+					if (params.includes("?")){
+						params = params.replace("?","")
+						// return next();
+					}
+
 					console.log("params before: " + params);
 					if (params.includes("#")){
 						var hashIndex= params.indexOf("#");
@@ -55,17 +60,6 @@ export default class BlogPage {
 			{ title: headerData.title, image: headerData.imgURL }
 		];
 
-		// console.log("headers0.title: "+headers[0].title);
-		// console.log("headers1.title: "+headers[1].title);
-		// const hrStyle = {
-		// 	display: 'block',
-    // 	height: '1px',
-    // 	border: '0',
-    // 	borderTop: '1px solid #000000',
-    // 	margin: '1em 0',
-    // 	padding: '0'
-		// };
-
 		return (
 
 			<div className='container'>
@@ -76,8 +70,7 @@ export default class BlogPage {
 						<hr />
 						<Paragraphs items={myData.p} />
 						<hr />
-						<CommentBox />
-						<CommentContainer items={myData.posted_comments} />
+						<Comments items={myData.posted_comments} />
 					</div>
 					<div className='col-md-4'>
 						<SearchBox moreStyle='card'/>
@@ -90,6 +83,9 @@ export default class BlogPage {
 	);
 
 }
+
+// <CommentBox id={0} />
+// <CommentContainer items={myData.posted_comments} />
 
 // <CategoriesBox title={categoriesList.title} items={categoriesList.values} />
   getTitle(){

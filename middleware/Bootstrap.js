@@ -15,27 +15,18 @@ export default class Bootstrap {
 		console.log("params value at Bootstrap: "+params);
 		var cssURL;
 		try{
+			//To verify the path is valid or not
+			//If exception is found then file doesn't exist so not importing the file
 			var s = require('../data/blogs/styles/'+params+'.css');
 		}catch(ex){
 			console.log(params + '.css file not found');
 			return [
 				"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-				// "http://localhost:3001/data/blogs/styles/common.css"
 			];
 		}
 
-		// var privateCSS =  params+".css";
-		// if (false) {
-    //     // Do something
-		// 		console.log("found file: "+ privateCSS);
-    // 	}else{
-		// 		console.log("Failed to find file: "+ privateCSS);
-		// 	}
-
-
 		return [
 			"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
-			// "http://localhost:3001/data/blogs/styles/common.css",
 			"http://localhost:3001/data/blogs/styles/"+params+".css"
 		];
 	}

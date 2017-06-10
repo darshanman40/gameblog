@@ -23,24 +23,28 @@
   ],
   "posted_comments":[
     {
+      "id":1,
       "display_pic":"http://placehold.it/64x64",
       "user":"",
       "date":"August 25, 2014 at 9:30 PM",
       "comment":"Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
     },
     {
+      "id":2,
       "display_pic":"https://images.moviepilot.com/image/upload/c_fill,h_64,q_auto,w_64/hntan0kuiufz6uu1q4ex.jpg",
       "user":"Hellboy",
       "date":"August 25, 2014 at 10:30 PM",
       "comment":"Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.",
       "nested_comment":[
         {
+          "id":3,
           "display_pic":"http://i.ebayimg.com/images/g/omgAAOSw4shX~4ya/s-l64.jpg",
           "user":"Lucifer",
           "date":"August 25, 2014 at 10:31 PM",
           "comment":"Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
         },
         {
+          "id":4,
           "display_pic":"http://i.ebayimg.com/images/g/omgAAOSw4shX~4ya/s-l64.jpg",
           "user":"Lucifer",
           "date":"August 25, 2014 at 10:31 PM",

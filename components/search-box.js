@@ -8,12 +8,13 @@ var styleWell="well";
 export default class SearchBox extends React.Component{
   constructor(props){
     super(props);
+    this.state={style:props.moreStyle}
   }
 
   render(){
-    var moreStyle = this.props.moreStyle;
-    if (moreStyle != ""){
-        styleWell = moreStyle + space + styleWell;
+
+    if (styleWell.indexOf(this.state.style) == -1){
+        styleWell = styleWell + space + this.state.style;
     }
 
     return (

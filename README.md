@@ -1,6 +1,6 @@
-# react-server-examples/hello-world
+# Game Blog
 
-Very simple example project for `react-server` which only shows server rendering
+Very Simple blog writing project using `react-server` only shows server rendering
 and interactivity on the client side.
 
 To start in development mode:
@@ -24,6 +24,8 @@ npm start -- --port=4000
 ```
 
 # Running the tests
+
+<Strong>Note: Test cases for this project are still pending; but you find default test cases comes with react-server.</Strong> 
 
 To run the tests
 
