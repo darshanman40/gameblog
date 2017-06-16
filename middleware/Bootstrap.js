@@ -8,11 +8,12 @@ export default class Bootstrap {
 		if (params.includes("#")){
 			var hashIndex= params.indexOf("#");
 			params = params.slice(0,hashIndex);
+		}else if(params.includes("?")){
+			params = params.replace(/=[a-zA-z0-9]+/)
 		}
 		if (params ==""){
 			params="index";
 		}
-		console.log("params value at Bootstrap: "+params);
 		var cssURL;
 		try{
 			//To verify the path is valid or not

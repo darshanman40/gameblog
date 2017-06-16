@@ -54,7 +54,7 @@ export default class NotFoundPage {
                         <hr className="intro-divider" />
                         <ul className="list-inline intro-social-buttons">
                             <li>
-                                <a href="http://localhost:3000/" className="btn btn-default btn-lg"><i className="fa fa-twitter fa-fw"></i> <span className="network-name">Home</span></a>
+                                <a href="/" className="btn btn-default btn-lg"><i className="fa fa-twitter fa-fw"></i> <span className="network-name">Home</span></a>
                             </li>
                         </ul>
                     </div>

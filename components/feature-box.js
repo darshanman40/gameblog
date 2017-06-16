@@ -31,6 +31,7 @@ export default class FeatureBox extends React.Component{
     return para;
   }
 
+  //TODO: Make it a global funtion
   continuedLine(para,charLimit, paraBool){
     var limit = charLimit / 2;
     if (para.length > limit) {

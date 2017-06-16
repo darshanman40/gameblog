@@ -1,15 +1,16 @@
 import React from 'react';
 
 import HeadingImage from '../components/heading-image';
-import JSScripts from '../components/js-scripts';
-import Gallery from '../components/image-components/gallery';
 
-// import myData from '../data/blogs/watch_dogs.json';
+import Gallery from '../components/image-components/gallery';
 import categoriesList from '../data/categories.json';
 
 import Paragraphs from '../components/paragraphs';
 import Title from '../components/title';
-import SearchBox from '../components/search-box';
+import NavigationBar from '../components/navigation-bar'
+
+import SearchBox from '../components/search-components/search-box';
+
 import CommentBox from '../components/comment-components/comment-box';
 import CommentContainer from '../components/comment-components/comment-container'
 import Comments from '../components/comment-components/comments'
@@ -18,7 +19,10 @@ import CategoriesList from  '../components/categories-list';
 
 import Footer from '../components/footer';
 
-var myData,headerData;
+var myData, headerData;
+const bcStyle= {
+  backgroundColor: "#ffffff"
+}
 export default class BlogPage {
 
 	handleRoute(next) {
@@ -62,60 +66,47 @@ export default class BlogPage {
 
 		return (
 
-			<div className='container'>
-				<div className='row'>
-					<div className='col-lg-8'>
-						<Title items={headerData} />
-						<Gallery items={items} />
-						<hr />
-						<Paragraphs items={myData.p} />
-						<hr />
-						<Comments items={myData.posted_comments} />
-					</div>
-					<div className='col-md-4'>
-						<SearchBox moreStyle='card'/>
-						<CategoriesList items={categoriesList.categories} />
-					</div>
+  			<div>
+  				<NavigationBar />
+  				<div className='container'>
+  					<div className='row'>
+  						<div className='col-lg-8'>
+  							<Title items={headerData} />
+  							<Gallery items={items} />
+  							<hr />
+  							<Paragraphs items={myData.p} />
+  							<hr />
+  							<Comments items={myData.posted_comments} />
+  						</div>
+  						<div className='col-md-4'>
+  							<CategoriesList items={categoriesList.categories} />
+  						</div>
+  					</div>
+  					<Footer />
+  				</div>
 				</div>
-				<Footer />
-			</div>
 
-	);
+	     );
+     }
 
-}
-
-// <CommentBox id={0} />
-// <CommentContainer items={myData.posted_comments} />
-
-// <CategoriesBox title={categoriesList.title} items={categoriesList.values} />
   getTitle(){
     return headerData.title;
   }
 
-	// getHeadStylesheets() {
-	// 	const bodyStyle =
-	// 		`<style>
-	// 			body:{
-	// 				background: #000000;
-	// 			}
-	// 		</style>`
-	// 	;
-  //       return [
-	// 				{bodyStyle}
-  //           "bootstrap/blog/css/blog-post.css",
-  //           "bootstrap/blog/css/bootstrap.css",
-	// 					"bootstrap/blog/css/bootstrap.min.css",
-  //       ]
-  // }
 
 
 	getMetaTags() {
-		return [
+		var tags =[
 			{charset: 'utf8'},
 			{'http-equiv': 'x-ua-compatible', 'content': 'ie=edge'},
-			{name: 'viewport', content: 'width=device-w idth, initial-scale=1'},
-			{name: 'description', content: 'About, powered by React Server'},
-			{name: 'generator', content: 'React Server'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{name: 'generator', content: 'React Server'}
 		];
+		if (headerData.keywords.length > 0){
+			for (var i=0; i < headerData.keywords.length; i++){
+				tags.push(headerData.keywords[i]);
+			}
+		}
+		return tags;
 	}
 }

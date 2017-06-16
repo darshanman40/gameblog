@@ -22,11 +22,19 @@ export default class Title extends React.Component{
     	margin: '1em 0',
     	padding: '0'
 		};
+    var author;
+    if (this.props.items.author != "" && this.props.items.author != null){
+      author=(
+        <p className="lead">
+          by <strong>{this.props.items.author}</strong>
+        </p>
+      );
+    }
 
     return (
       <div style={divStyle}>
         <h1 className="game_title">{this.props.items.title}</h1>
-        <p className="lead">by <strong>{this.props.items.author}</strong></p>
+          {author}
         <hr style={hrStyle} />
       </div>
     );

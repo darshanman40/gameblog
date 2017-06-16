@@ -60,22 +60,6 @@ export default class CommentBox extends React.Component{
     }
     this.refs.user.value ="";
     this.refs.comment.value="";
-    // var s = require('../data/blogs/styles/'+params+'.css');
-    // var data =  require('./util/comment.json');
-    // // var comment = { "comment":this.state.text};
-    // data.comment = this.state.text;
-    // module.exports = data;
-    //
-    //
-    // fs.writeFile(COMMENT_FILE, data, function (err) {
-    //   if (err) return console.log("ERR: "+err);
-    //   console.log('Writing '+ this.state.text.String());
-    // });
-    //
-    // fs.writeFileSync(COMMENT_FILE, this.state.text);
-    // //   console.log('Writing '+ this.state.text.String());
-    // // });
-    //  console.log('Writing '+ this.state.text.String());
   }
 
   render(){
@@ -109,16 +93,3 @@ export default class CommentBox extends React.Component{
     );
   }
 }
-
-//
-// <div className="well card">
-//   <h4>Leave a Comment</h4>
-//   <form role="form" >
-//     <div className="form-group">
-//        <input id="user" type="text" className="form-control" placeholder="Enter username..."/>
-//       <br />
-//       <textarea id="comment" className="form-control" style={noResizeStyle} rows="3"/>
-//     </div>
-//     <button onClick={this.handleClick()} type="submit" className="btn btn-primary">Submit</button>
-//   </form>
-// </div>

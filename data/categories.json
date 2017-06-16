@@ -31,12 +31,24 @@
       {
         "game":"Middle Earth: Shadow of Mordor",
         "url":"/middle_earth_shadow_of_mordor",
-        "header_key":"middle_earth_shadow_of_mordor"
+        "header_key":"middle_earth_shadow_of_mordor",
+        "keywords":[
+          {
+            "name":"Description",
+            "content":"Game Blog - Middle Earth: Shadow of Mordor review by Darshan Manchekar."
+          }
+        ]
       },
       {
         "game":"Watch Dogs",
-        "url":"http://localhost:3000/watch_dogs",
-        "header_key":"watch_dogs"
+        "url":"/watch_dogs",
+        "header_key":"watch_dogs",
+        "keywords":[
+          {
+            "name":"Description",
+            "content":"Game Blog - Watch Dogs review by Darshan Manchekar."
+          }
+        ]
       }
     ]
   }

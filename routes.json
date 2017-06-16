@@ -19,6 +19,10 @@
       "path":"/middle_earth_shadow_of_mordor",
       "page":"pages/blog-page.js"
     },
+    "ResultPage":{
+      "path":"/results",
+      "page":"pages/result-page.js"
+    },
     "NotFoundPage": {
 			"path": "/(.*)",
 			"page": "pages/not-found.js"

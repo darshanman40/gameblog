@@ -3,5 +3,11 @@
     "author":"Darshan Manchekar",
     "imgURL":"http://mightybloke.com/wp-content/uploads/2015/02/hBPHsjITU2uzcfihFcfd_1_shadowofmordorgroot.jpg",
     "intro":"123456789 123456789 123456789 123456789 1234567890",
-    "URL": "/middle_earth_shadow_of_mordor"
+    "URL": "/middle_earth_shadow_of_mordor",
+    "keywords":[
+      {
+        "name":"Description",
+        "content":"Game Blog - Middle Earth: Shadow of Mordor review by Darshan Manchekar."
+      }
+    ]
 }
